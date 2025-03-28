@@ -1,0 +1,21 @@
+###########Postman testing#######
+http://localhost:8080/addUser
+{
+    "fname": "ykd",
+    "lname": "ded"
+}
+
+http://localhost:8080/findAllUsers
+
+#################mongo db#############
+{
+  "fname": "ykd",
+  "lname": "ded",
+  "createdDate": {
+    "$timestamp": {
+      "t": 1743160006,
+      "i": 1
+    }
+  },
+  "_class": "com.example.practice.model.User"
+}

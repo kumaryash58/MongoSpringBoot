@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.sql.Timestamp;
 
 import org.bson.BsonTimestamp;
 import org.bson.types.ObjectId;
