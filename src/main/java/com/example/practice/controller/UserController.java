@@ -2,6 +2,7 @@ package com.example.practice.controller;
 
 import java.util.List;
 
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -34,11 +35,11 @@ public class UserController {
 		return repo.findAll();
 	}
 
-//	@DeleteMapping("/delete/{id}")
-//	public String deleteUser(@PathVariable int id) {
-//		repo.deleteById(id);
-//
-//		return "Deleted Successfully";
-//	}
+	@DeleteMapping("/delete/{id}")
+	public String deleteUser(@PathVariable Long id) {
+		repo.deleteById(id);
+
+		return "Deleted Successfully";
+	}
 
 }
